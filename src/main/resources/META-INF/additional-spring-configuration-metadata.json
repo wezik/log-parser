@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "logs.queue",
+      "type": "java.lang.String",
+      "description": "Amount of logs that can be queued at the same time during parsing of the logs from file to database. Prevents large stress on your hardware."
+    },
+    {
+      "name": "flag.time",
+      "type": "java.lang.String",
+      "description": "Time in ms which extended flags the log."
+    }
+  ] }
