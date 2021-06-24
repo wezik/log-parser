@@ -1,6 +1,7 @@
 package com.wezik.app.domain;
 
 import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -15,10 +16,10 @@ import javax.persistence.*;
 @Getter
 @Entity
 @Table(name = "logs")
+@EqualsAndHashCode
 public class FullLog {
 
     @Id
-    @Column
     private String id;
 
     @Column

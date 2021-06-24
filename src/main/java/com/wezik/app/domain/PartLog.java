@@ -7,7 +7,7 @@ import lombok.Getter;
 @Getter
 @AllArgsConstructor
 @EqualsAndHashCode
-public class PartialLog {
+public class PartLog {
 
     private final String id;
     private final String state;

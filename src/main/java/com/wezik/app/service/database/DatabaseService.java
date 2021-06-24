@@ -11,8 +11,8 @@ public class DatabaseService {
 
     private final LogEntityRepository logEntityRepository;
 
-    public FullLog save(FullLog fullLog) {
-        return logEntityRepository.save(fullLog);
+    public Iterable<FullLog> saveAll(Iterable<FullLog> logs) {
+        return logEntityRepository.saveAll(logs);
     }
 
     public long countFlagged() {

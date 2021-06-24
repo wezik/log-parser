@@ -1,13 +1,13 @@
 package com.wezik.app.mapper;
 
 import com.wezik.app.domain.FullLog;
-import com.wezik.app.domain.PartialLog;
+import com.wezik.app.domain.PartLog;
 import org.springframework.stereotype.Component;
 
 @Component
 public class FullLogMapper {
 
-    public FullLog mapPartialLogsToFullLog(PartialLog startLog, PartialLog finishLog, boolean flag) {
+    public FullLog mapPartialLogsToFullLog(PartLog startLog, PartLog finishLog, boolean flag) {
         return new FullLog(
                 startLog.getId(),
                 startLog.getType() != null ? startLog.getType() : finishLog.getType(),
